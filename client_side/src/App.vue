@@ -1,0 +1,36 @@
+<template>
+  <div id="app">
+    <my-header></my-header>
+        <div class="uk-container">
+          <div>
+            <router-view></router-view>
+          </div>
+        </div>
+  </div>
+</template>
+
+<script>
+import myHeader from '@/components/Header.vue'
+
+export default {
+  name: 'app',
+  components: {
+    myHeader
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+</style>
